@@ -29,25 +29,12 @@ public class Main {
 			}
 		}
 		while(constant);
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 	
 	
 	public static int addition() {
 		int answer = 0, a,b;
 		Scanner in = new Scanner(System.in);
-		
-		
 		
 		try {
 			System.out.println("Number A: ");
