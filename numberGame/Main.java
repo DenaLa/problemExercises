@@ -63,7 +63,6 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		
 		random = (int)Math.floor(Math.random() * (max-min + 1) + min);
-		random = 1;
 		System.out.println("I have thought of a number between " + min + " and " + max + ". You have "
 				+ tries + " chances to get it right.");
 		do {
