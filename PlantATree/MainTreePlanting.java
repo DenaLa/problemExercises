@@ -1,5 +1,3 @@
-package treePlanting;
-
 import java.util.HashMap;
 import java.util.InputMismatchException;
 import java.util.Scanner;
