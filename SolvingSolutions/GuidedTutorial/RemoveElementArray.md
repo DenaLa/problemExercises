@@ -46,11 +46,12 @@ There are two ways to solve this. You can either swap the elements to put the fo
 
 
 ## Why does it work?
-The first solution goes the swapping route, which works for the most part but has a fatal flaw of the possibility of the two pointers passing each other while ***B*** checks for values to move to the back of the array. It also cannot count for ***k*** while it works, and needs an additonal loop for it. This makes the code run longer than neccesarry.
+The first solution goes the swapping route, which works for the most part but has a fatal flaw of the possibility of the two pointers passing each other while ***B*** checks for values to move to the back of the array. It also cannot count for ***k*** while it works, and needs an additonal loop for it. This makes the code run longer than neccesary.
 
 The second solution is very compact. I will refer to the loop as ***Pointer I*** for this explanation.
 
 ***Pointer I*** is concerned with checking each element in the array if it is equal to ***val***, and nothing else. This gets us through the entire array without worries of going out of bounds. ***Pointer A*** serves a different purpose. ***Pointer A*** points to an area in the array that has not been overwritten yet, making it available for later elements in the array to be put inside. If there is an element later in the array that is not equal to ***val***, it can be brought closer to the start of the array thanks to ***Pointer A** only incrementing when that is the case. In essence, ***Pointer A*** is marking an available spot for a value to migrate to. 
+
 Since the values of the elements beyond our ***non-val** elements don't matter, we are free to have duplicates, and don't neccesarily need to move our ***val*** elements anywhere.
 
 ## Time Complexity
