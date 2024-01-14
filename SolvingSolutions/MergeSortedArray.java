@@ -77,6 +77,16 @@ public class MergeSortedArray {
 			}
 		}
 		
+		/* N has to not be 0
+		 * Since our second array is smaller, we iterate the loop depending on it
+		 * We have three pointers, one looking at the end of elementsA, one
+		 * looking at the end of elementsB, and one that runs through the array backwards, which we will
+		 * call C
+		 * As long as A is in bounds, If the element of A is bigger than the element of B, then the element of A is put where the
+		 * element of C is looking. C and A both shift back by 1. If the element of B is larger than the
+		 * element of A, then the element of B is put in the place of Pointer C
+		 */
+		
 		
 		
     }//merge
