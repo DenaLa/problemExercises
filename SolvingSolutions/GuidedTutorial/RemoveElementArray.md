@@ -6,7 +6,7 @@ _Arrays, Two Pointers_
 Given an int array (***nums***), and a value to remove (***val***), remove all instances of this value in-place. While you do this, count how many numbers are not our forbidden value, and return that number. **The elements following the first instances of our non forbidden elements do not matter.**
 _To code in place means to not allocate any extra space in order to arrange your array. You are given what you are given and must work around this restriction. This does save space in a program overall, so it is useful_
 
-## Guidance
+### Guidance
 We don't need to "remove" elements per se. Since the trailing elements (the elements after our allowed elements) do not matter, we can have these elements be whatever we want.
 
 There are two ways to solve this. You can either swap the elements to put the forbidden value at the end of the array (requiring two passes), or we can copy the elements in-place as we iterate through the array normally. Both solutions will be shown.
