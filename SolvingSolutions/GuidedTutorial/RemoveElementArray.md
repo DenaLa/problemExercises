@@ -1,4 +1,6 @@
 # Remove Element from Array
+## Concepts Explored
+_Arrays, Two Pointers_
 
 ## Instructions
 Given an int array (***nums***), and a value to remove (***val***), remove all instances of this value in-place. While you do this, count how many numbers are not our forbidden value, and return that number. **The elements following the first instances of our non forbidden elements do not matter.**
