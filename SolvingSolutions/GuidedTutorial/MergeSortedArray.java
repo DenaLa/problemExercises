@@ -44,23 +44,10 @@ public class MergeSortedArray {
 		
 	} 
 	
-	public static void merge(int[] nums1, int m, int[] nums2, int n) {
-		/*int j = 0;
-		if(n != 0) {
-        	for(int i = m; i<nums1.length; i++ ) {
-        		nums1[i] = nums2[j];
-        		j++;
-        	}
-        	
-        	Arrays.sort(nums1); 
-        	
-        } */ //made before I realized this was a two pointer problem
-		
+	public static void merge(int[] nums1, int m, int[] nums2, int n) {	
 		int pointerA = m-1;
 		int pointerB = n-1;
 		int pointerC = nums1.length -1;
-		
-		
 		
 		if(n != 0) {
 			while(pointerB >= 0) {
@@ -86,8 +73,6 @@ public class MergeSortedArray {
 		 * element of C is looking. C and A both shift back by 1. If the element of B is larger than the
 		 * element of A, then the element of B is put in the place of Pointer C
 		 */
-		
-		
 		
     }//merge
 
