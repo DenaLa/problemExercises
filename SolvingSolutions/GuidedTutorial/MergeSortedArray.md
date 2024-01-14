@@ -1,4 +1,6 @@
 # Merge Sorted Array
+## Concepts Explored
+_Arrays, Two Pointer, Sorting_
 
 ## Instructions
 Given 2 int arrays (***num1*** and ***num2***) with variables **m** and ***n*** representing the amount of elements in each, merge the two into one sorted array.
