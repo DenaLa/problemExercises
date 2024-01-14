@@ -84,7 +84,14 @@ public class RemoveElement {
 		
 		return A;
 		
-		//the new code counts and replaces at the same time
+		/*the new code counts and replaces at the same time
+		We use two pointer, pointer A, and pointer B. Pointer B, in this case, would be the iterator
+		On out for each loop.
+		As we go through the loop, if the value at B isn't our forbbiden value, we make the value at
+		A the same as the Value at B. Then we move the position of A over one.
+		Doing it this way also keeps track of how many numbers are not our forbidden value
+		*/
+		
 
     }//function
 
