@@ -7,7 +7,7 @@ The sorted array should be contained in num1. num1 will be the length m + n to a
 ### Guidance
 Instead of looking at two arrays, look at the two elements from each array
 
-## Solution Explanation
+## Solution
 - We will have 3 pointers:
   * Pointer A will watch the valid elements in nums1
   * Pointer B will watch the valid elements in nums2
