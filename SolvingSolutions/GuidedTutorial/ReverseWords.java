@@ -16,7 +16,7 @@ public class ReverseWords {
 	public static String reverseWords(String s) {
         StringBuilder sb = new StringBuilder();
         String[] A = s.split("\\s+");
-        ArrayList<String> B = new ArrayList<>();
+        /*ArrayList<String> B = new ArrayList<>();
         
         for(int i = A.length-1; i > -1; i--) {
         	B.add(A[i]);
@@ -24,6 +24,10 @@ public class ReverseWords {
         
         for(String a : B) {
         	sb.append(a).append(" ");
+        } */
+        
+        for(int i = A.length-1; i > -1; i--) {
+        	sb.append(A[i]).append(" ");
         }
 		
 		return sb.toString().trim();
