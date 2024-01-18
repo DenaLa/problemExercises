@@ -7,6 +7,9 @@ public class LongestSubarrayAfterDeleting {
 		int nums2[] = {0,1,1,1,0,1,1,0,1};
 		int nums3[] = {1,1,1};
 		
+		System.out.println(longestSubarray(nums1));
+		System.out.println(longestSubarray(nums2));
+		System.out.println(longestSubarray(nums3));
 		
 	}
 	
