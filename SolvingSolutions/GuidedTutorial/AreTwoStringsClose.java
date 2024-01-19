@@ -13,6 +13,11 @@ public class AreTwoStringsClose {
 		
 		String word5 = "cabbba";
 		String word6 = "abbccc";
+		
+		
+		System.out.println(closeStrings(word1, word2));
+		System.out.println(closeStrings(word3, word4));
+		System.out.println(closeStrings(word5, word6));
 
 	}
 	
