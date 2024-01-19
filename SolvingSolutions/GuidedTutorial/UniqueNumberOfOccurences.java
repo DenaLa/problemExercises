@@ -23,12 +23,10 @@ public class UniqueNumberOfOccurences {
         HashMap<Integer,Integer> A = new HashMap<>();
         
         for(int a: arr) {
-        	if(!A.containsKey(a)) {
-        		A.put(a,1);
-        	}
-        	else{
-        		A.replace(a, A.get(a)+ 1);
-        	}
+        	A.merge(a, 1, Integer::sum);
+        	//If a is not in A, create [a=1] key,value pair
+        	//If a is in A, then perform Integer.sum(a.get, 1) on the value
+
         }
         
         Set<Integer> check = new HashSet<>();
@@ -36,7 +34,6 @@ public class UniqueNumberOfOccurences {
             check.add(a);
         }
     	
-    	System.out.println(check.toString());
     	
     	return check.size() == A.size();
     }
