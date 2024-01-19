@@ -32,9 +32,9 @@ public class FindTheDifference {
 	}
 	
 	  public static List<List<Integer>> findDifference(int[] nums1, int[] nums2) {
-		  List<List<Integer>> result = new ArrayList<>();
-		  Set<Integer> set1 = new HashSet<>();
-	      Set<Integer> set2 = new HashSet<>();
+		List<List<Integer>> result = new ArrayList<>();
+		Set<Integer> set1 = new HashSet<>();
+	      	Set<Integer> set2 = new HashSet<>();
 	      
 	      result.add(new ArrayList<>());
 	      result.add(new ArrayList<>());
