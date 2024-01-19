@@ -1,7 +1,5 @@
 package findPivotIndex;
 
-import java.util.Arrays;
-
 public class FindPivotIndex {
 
 	public static void main(String[] args) {
