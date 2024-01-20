@@ -6,9 +6,9 @@ _Hash Tables, Strings, Sorting, Counting_
 Two strings are considered close if you can attain one from the other using the following operations:
 
     Operation 1: Swap any two existing characters.
-        For example, a_b_cd_e_ -> a_e_cd_b_
+        For example, a b c d e -> a e c d b (Swap B and E)
     Operation 2: Transform every occurrence of one existing character into another existing character, and do the same with the other character.
-        For example, _aa_c_abb_ -> _bb_c_baa_ (all _a_'s turn into _b_'s, and all _b_'s turn into _a_'s)
+        For example, a a c a b b -> b b c b a a (all a's turn into b's, and all b's turn into a's)
 
 You can use the operations on either string as many times as necessary.
 
