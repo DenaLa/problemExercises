@@ -1,3 +1,5 @@
-Breakdowns for the solutions in this repository, with additonal code to match. Used to demonstrate an understanding of the topic, as well as some technical writing skills to convey this information to someone who may not be as informed on the topic.
+Detailed breakdowns for the solution to leetcode problems. Goes through the Topics covered, the solution algorithm, The intuition behind the algorithms, and states the time complexity. Solutions here are a mixture of my own, and those by [This Source](https://walkccc.me/LeetCode/) that provide better algorithms
 
-**_ALL SOLUTIONS ARE IN JAVA!_**
+### Important Things To Note
+1. Some of my solutions are similar to the solutions provided by the repository linked
+2. All solutions are in java
