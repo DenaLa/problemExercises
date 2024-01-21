@@ -3,3 +3,4 @@ Detailed breakdowns for the solution to leetcode problems. Goes through the Topi
 ### Important Things To Note
 1. The purpose of this repository is to study the solutions that others have provided, and to learn various techniques and ways of thinking to approach things. While some solutions in this repository are my own, please assume that I am studying the solutions provided in that repository.
 2. All solutions are in java
+3. All problems are then reattempted without reading these solutions, in order to internalize techniques and information. If you want to study with these explanations, I highly advise doing the same
