@@ -12,6 +12,7 @@ You are given an integer array **gain** of length **n** where **gain[i]** is the
 - This means, for any point in **altitude[i]** it is the sum of **altitude[i-1]** and all values of **gain** up until **i-1**
 
 ## Solution
+_This solution was gotten first try without looking at the repository_
 1. The biker stops at **n+1** stops, so we create a new array called **alt** that is of length **n+1**
 2. We also create a variable **max** to keep track of our max altitude. This starts at 0.
 3. Set **alt[0]** to **0,** since the biker always starts at a an altitude of 0.
