@@ -3,6 +3,7 @@ package oddEvenLinkedList;
 public class OddEvenLinkedList {
 
 //I don't know how to print this out to demonstrate what it does in leetcode.
+//Please just insert the code into leetcode's problem to see it in action.
 
 	
 	public static class ListNode {
