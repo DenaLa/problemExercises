@@ -33,4 +33,4 @@ N/A
 
 
 ## Time complexity
-The time complexity of this algorithm is _O(n^2)_. We are working through a matrix, and are comparing elements from the rows against elements in the columns.
+The time complexity of this algorithm is _O(n<sup>2</sup>)_. We are working through a matrix, and are comparing elements from the rows against elements in the columns.
