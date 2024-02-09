@@ -11,7 +11,7 @@ Return a boolean array result of length **n**, where **result[i]** is _true_ if,
 Note that multiple kids can have the greatest number of candies.
 
 ## Given Hints
-- Use greedy approach. For each kid check if candies[i] + extraCandies ≥ maximum in Candies[i].
+- Use greedy approach. For each kid check if ```candies[i] + extraCandies ≥ maximum``` in ```Candies[i]```.
 
 ## Intuition
 - We are picking out the largest number in the array and comparing it to the current number in the array + extraCandies
