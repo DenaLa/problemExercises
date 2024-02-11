@@ -21,10 +21,19 @@ N/A
 ## Step By Step Solution
 1. Create an integer variable ```len``` to hold the length of ```flowerbed```
 2. If ```n``` is 0, return ```true```. There are no flowers to plant
-3. We need to create a for loop.
+3. We need to create a for loop. This for loop will iterate for the entire flowerbed
+4. Inside the for loop, we check for three conditions, each seperated by the ```&&``` operator
+   1. Is ```flowerbed[i]``` 0?
+   2. Is ```i``` 0 or ```flowerbed[i-1]``` 0?
+   3. Is ```i``` equals to ```len-1``` or ```flowerbed[i+1]``` 0?
+   * If these conditions are met, then we make ```flowerbed[i] = 1``` and reduce ```n``` by ```1```.
+   * If at any point ```n == 0```, we return ```true```
+5. Outside our for loop, we return ```false```. It means that ```n``` never reached 0, which in turn means we did not plant all of our flowers.
 
 ## Explaining the Solution
-
+- The way the logic is coded seems a bit strange. While it does make sense to check ```flowerbed[i] == 0```, the way our three conditions are checked may seem odd.
+  1. ```(i == 0 || flowerbed[i - 1] == 0)``` Serves to check whether or not our index is at the very start of the flowerbed. Neither of these statements can be true at the same time; if ```i == 0```, there is no ```i-1``` to check, and if there is an ```i-1``` to check, then ```i``` isn't 0. It is done this way to prevent the algorithm from checking for a previous index while we are at the beginning
+  2. Likewise, ```(i == len - 1 || flowerbed[i + 1] == 0)``` accomplishes this except for the end of the array instead.
 
 ## Code
 ```java
@@ -35,7 +44,7 @@ class Solution {
             return true;
         }
         for (int i = 0; i < len; i++) {
-            if ((i == 0 || flowerbed[i - 1] == 0) && flowerbed[i] == 0 && (i == len - 1 || flowerbed[i + 1] == 0)) {
+            if (flowerbed[i] == 0 && (i == 0 || flowerbed[i - 1] == 0) && (i == len - 1 || flowerbed[i + 1] == 0)) {
                 flowerbed[i] = 1;
                 n--;
                 if (n == 0) {
@@ -51,3 +60,4 @@ class Solution {
 
 
 ## Time Complexity
+O(n)
